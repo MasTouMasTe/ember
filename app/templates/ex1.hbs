@@ -1,0 +1,15 @@
+{{page-title "Ex1"}}
+
+<div class="card">
+
+  <div class="card-header"> Ex1 : Note application</div>
+
+  <label>
+    <Textarea class="form-control mb-3" @value="{{this.content}}"></Textarea>
+    <div class="alert alert-info"> il reste {{this.size}} caractères disponibles </div>
+  </label>
+
+  <input type="button" value="Clear" onclick="clear()">
+
+</div>
+{{outlet}}
